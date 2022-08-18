@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.com/tourist-vouchers"
+        xmlns:tns="http://www.example.com/tourist-vouchers" elementFormDefault="qualified">
+
+    <element name="tourist-vouchers" type="tns:TouristVouchers"/>
+
+    <complexType name="TouristVouchers">
+        <sequence>
+            <element ref="tns:voucher" minOccurs="1" maxOccurs="unbounded"/>
+        </sequence>
+    </complexType>
+
+    <complexType name="Voucher">
+        <sequence>
+            <element name="country" type="tns:Countries"/>
+            <element name="departure-date-time" type="dateTime"/>
+            <element name="arrival-date-time" type="dateTime"/>
+            <element name="transport-type" type="tns:Transport"/>
+            <element name="hotel" type="tns:Hotel"/>
+            <element name="cost" type="positiveInteger"/>
+        </sequence>
+        <attribute name="id" type="ID" use="required"/>
+        <attribute name="web-site" type="tns:Link" use="optional" default="https://www.tour.com"/>
+    </complexType>
+
+    <complexType name="PilgrimageVoucher">
+        <complexContent>
+            <extension base="tns:Voucher">
+                <sequence>
+                    <element name="pilgrimage-passport-required" type="boolean"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="BeachVacationVoucher">
+        <complexContent>
+            <extension base="tns:Voucher">
+                <sequence>
+                    <element name="distance-to-beach" type="tns:DistanceToBeach"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <simpleType name="DistanceToBeach">
+        <restriction base="positiveInteger">
+            <minInclusive value="10"/>
+            <maxInclusive value="5000"/>
+        </restriction>
+    </simpleType>
+
+    <complexType name="Hotel">
+        <sequence>
+            <element name="stars" type="tns:Stars"/>
+            <element name="food" type="tns:FoodType"/>
+            <element name="place-count" type="tns:PlaceCount"/>
+            <element name="air-conditioning" type="boolean"/>
+            <element name="tv" type="boolean"/>
+        </sequence>
+    </complexType>
+
+    <simpleType name="Link">
+        <restriction base="string">
+            <pattern value="(https|http)?://[^\s]+"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="PlaceCount">
+        <restriction base="positiveInteger">
+            <minInclusive value="1"/>
+            <maxInclusive value="10"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="FoodType">
+        <restriction base="string">
+            <enumeration value="HB"/>
+            <enumeration value="BB"/>
+            <enumeration value="AL"/>
+            <enumeration value="NO"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Stars">
+        <restriction base="positiveInteger">
+            <minInclusive value="1"/>
+            <maxInclusive value="7"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Transport">
+        <restriction base="string">
+            <enumeration value="Auto"/>
+            <enumeration value="Plane"/>
+            <enumeration value="Train"/>
+            <enumeration value="Ship"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Countries">
+        <restriction base="string">
+            <enumeration value="Usa"/>
+            <enumeration value="Turkey"/>
+            <enumeration value="Russia"/>
+            <enumeration value="Egypt"/>
+        </restriction>
+    </simpleType>
+
+    <element name="voucher" type="tns:Voucher" abstract="true"/>
+    <element name="beach-vacation-voucher" type="tns:BeachVacationVoucher" substitutionGroup="tns:voucher"/>
+    <element name="pilgrimage-voucher" type="tns:PilgrimageVoucher" substitutionGroup="tns:voucher"/>
+</schema>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tourist-vouchers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns="http://www.example.com/tourist-vouchers"
+                  xsi:schemaLocation="http://www.example.com/tourist-vouchers voucher.xsd
+http://www.example.com/tourist-vouchers ">
+
+    <beach-vacation-voucher id="id1" web-site="https://www.tour1.com">
+        <country>Usa</country>
+        <departure-date-time>2020-11-17T06:00:00</departure-date-time>
+        <arrival-date-time>2020-12-03T06:00:00</arrival-date-time>
+        <transport-type>Auto</transport-type>
+        <hotel>
+            <stars>5</stars>
+            <food>AL</food>
+            <place-count>4</place-count>
+            <air-conditioning>true</air-conditioning>
+            <tv>true</tv>
+        </hotel>
+        <cost>1232</cost>
+        <distance-to-beach>400</distance-to-beach>
+    </beach-vacation-voucher>
+
+    <beach-vacation-voucher web-site="https://www.tour1.com" id="id2">
+        <country>Egypt</country>
+        <departure-date-time>2021-11-17T06:00:00</departure-date-time>
+        <arrival-date-time>2021-12-03T06:00:00</arrival-date-time>
+        <transport-type>Auto</transport-type>
+        <hotel>
+            <stars>5</stars>
+            <food>AL</food>
+            <place-count>4</place-count>
+            <air-conditioning>true</air-conditioning>
+            <tv>true</tv>
+        </hotel>
+        <cost>1232</cost>
+        <distance-to-beach>400</distance-to-beach>
+    </beach-vacation-voucher>
+
+    <beach-vacation-voucher id="id3">
+        <country>Russia</country>
+        <departure-date-time>2021-11-18T06:20:00</departure-date-time>
+        <arrival-date-time>2021-12-03T06:00:00</arrival-date-time>
+        <transport-type>Plane</transport-type>
+        <hotel>
+            <stars>7</stars>
+            <food>HB</food>
+            <place-count>5</place-count>
+            <air-conditioning>true</air-conditioning>
+            <tv>false</tv>
+        </hotel>
+        <cost>123542</cost>
+        <distance-to-beach>2342</distance-to-beach>
+    </beach-vacation-voucher>
+
+    <beach-vacation-voucher id="id4">
+        <country>Turkey</country>
+        <departure-date-time>2010-11-18T06:20:00</departure-date-time>
+        <arrival-date-time>2010-12-18T06:20:00</arrival-date-time>
+        <transport-type>Train</transport-type>
+        <hotel>
+            <stars>2</stars>
+            <food>BB</food>
+            <place-count>3</place-count>
+            <air-conditioning>false</air-conditioning>
+            <tv>true</tv>
+        </hotel>
+        <cost>432</cost>
+        <distance-to-beach>230</distance-to-beach>
+    </beach-vacation-voucher>
+
+    <beach-vacation-voucher id="id5">
+        <country>Usa</country>
+        <departure-date-time>2010-11-18T06:20:00</departure-date-time>
+        <arrival-date-time>2010-12-18T06:20:00</arrival-date-time>
+        <transport-type>Plane</transport-type>
+        <hotel>
+            <stars>5</stars>
+            <food>HB</food>
+            <place-count>6</place-count>
+            <air-conditioning>true</air-conditioning>
+            <tv>true</tv>
+        </hotel>
+        <cost>434</cost>
+        <distance-to-beach>1233</distance-to-beach>
+    </beach-vacation-voucher>
+
+    <beach-vacation-voucher id="id6">
+        <country>Russia</country>
+        <departure-date-time>2010-11-18T06:20:00</departure-date-time>
+        <arrival-date-time>2010-12-18T06:20:00</arrival-date-time>
+        <transport-type>Auto</transport-type>
+        <hotel>
+            <stars>2</stars>
+            <food>AL</food>
+            <place-count>1</place-count>
+            <air-conditioning>true</air-conditioning>
+            <tv>true</tv>
+        </hotel>
+        <cost>1000</cost>
+        <distance-to-beach>30</distance-to-beach>
+    </beach-vacation-voucher>
+
+    <beach-vacation-voucher id="id7">
+        <country>Egypt</country>
+        <departure-date-time>2010-11-18T06:20:00</departure-date-time>
+        <arrival-date-time>2010-12-18T06:20:00</arrival-date-time>
+        <transport-type>Auto</transport-type>
+        <hotel>
+            <stars>4</stars>
+            <food>BB</food>
+            <place-count>4</place-count>
+            <air-conditioning>false</air-conditioning>
+            <tv>false</tv>
+        </hotel>
+        <cost>200</cost>
+        <distance-to-beach>500</distance-to-beach>
+    </beach-vacation-voucher>
+
+    <beach-vacation-voucher id="id8">
+        <country>Russia</country>
+        <departure-date-time>2010-11-18T06:20:00</departure-date-time>
+        <arrival-date-time>2010-12-18T06:20:00</arrival-date-time>
+        <transport-type>Plane</transport-type>
+        <hotel>
+            <stars>3</stars>
+            <food>BB</food>
+            <place-count>3</place-count>
+            <air-conditioning>false</air-conditioning>
+            <tv>false</tv>
+        </hotel>
+        <cost>400</cost>
+        <distance-to-beach>300</distance-to-beach>
+    </beach-vacation-voucher>
+
+    <pilgrimage-voucher id="id9">
+        <country>Egypt</country>
+        <departure-date-time>2010-11-18T06:20:00</departure-date-time>
+        <arrival-date-time>2010-12-18T06:20:00</arrival-date-time>
+        <transport-type>Plane</transport-type>
+        <hotel>
+            <stars>3</stars>
+            <food>NO</food>
+            <place-count>2</place-count>
+            <air-conditioning>false</air-conditioning>
+            <tv>false</tv>
+        </hotel>
+        <cost>1000</cost>
+        <pilgrimage-passport-required>true</pilgrimage-passport-required>
+    </pilgrimage-voucher>
+
+    <pilgrimage-voucher id="id10">
+        <country>Usa</country>
+        <departure-date-time>2010-11-18T06:20:00</departure-date-time>
+        <arrival-date-time>2010-12-18T06:20:00</arrival-date-time>
+        <transport-type>Auto</transport-type>
+        <hotel>
+            <stars>4</stars>
+            <food>AL</food>
+            <place-count>3</place-count>
+            <air-conditioning>false</air-conditioning>
+            <tv>false</tv>
+        </hotel>
+        <cost>4000</cost>
+        <pilgrimage-passport-required>true</pilgrimage-passport-required>
+    </pilgrimage-voucher>
+
+    <pilgrimage-voucher id="id11">
+        <country>Egypt</country>
+        <departure-date-time>2010-11-18T06:20:00</departure-date-time>
+        <arrival-date-time>2010-12-18T06:20:00</arrival-date-time>
+        <transport-type>Plane</transport-type>
+        <hotel>
+            <stars>7</stars>
+            <food>AL</food>
+            <place-count>3</place-count>
+            <air-conditioning>true</air-conditioning>
+            <tv>true</tv>
+        </hotel>
+        <cost>7000</cost>
+        <pilgrimage-passport-required>true</pilgrimage-passport-required>
+    </pilgrimage-voucher>
+
+    <pilgrimage-voucher id="id12">
+        <country>Turkey</country>
+        <departure-date-time>2010-11-18T06:20:00</departure-date-time>
+        <arrival-date-time>2010-12-18T06:20:00</arrival-date-time>
+        <transport-type>Auto</transport-type>
+        <hotel>
+            <stars>4</stars>
+            <food>NO</food>
+            <place-count>3</place-count>
+            <air-conditioning>true</air-conditioning>
+            <tv>true</tv>
+        </hotel>
+        <cost>3000</cost>
+        <pilgrimage-passport-required>false</pilgrimage-passport-required>
+    </pilgrimage-voucher>
+
+    <pilgrimage-voucher id="id13">
+        <country>Usa</country>
+        <departure-date-time>2010-11-18T06:20:00</departure-date-time>
+        <arrival-date-time>2010-12-18T06:20:00</arrival-date-time>
+        <transport-type>Plane</transport-type>
+        <hotel>
+            <stars>1</stars>
+            <food>NO</food>
+            <place-count>1</place-count>
+            <air-conditioning>false</air-conditioning>
+            <tv>false</tv>
+        </hotel>
+        <cost>100</cost>
+        <pilgrimage-passport-required>true</pilgrimage-passport-required>
+    </pilgrimage-voucher>
+
+    <pilgrimage-voucher id="id14">
+        <country>Egypt</country>
+        <departure-date-time>2010-11-18T06:20:00</departure-date-time>
+        <arrival-date-time>2010-12-18T06:20:00</arrival-date-time>
+        <transport-type>Train</transport-type>
+        <hotel>
+            <stars>4</stars>
+            <food>AL</food>
+            <place-count>2</place-count>
+            <air-conditioning>true</air-conditioning>
+            <tv>true</tv>
+        </hotel>
+        <cost>3000</cost>
+        <pilgrimage-passport-required>true</pilgrimage-passport-required>
+    </pilgrimage-voucher>
+
+    <pilgrimage-voucher id="id15">
+        <country>Russia</country>
+        <departure-date-time>2010-11-18T06:20:00</departure-date-time>
+        <arrival-date-time>2010-12-18T06:20:00</arrival-date-time>
+        <transport-type>Plane</transport-type>
+        <hotel>
+            <stars>5</stars>
+            <food>AL</food>
+            <place-count>3</place-count>
+            <air-conditioning>true</air-conditioning>
+            <tv>true</tv>
+        </hotel>
+        <cost>1000</cost>
+        <pilgrimage-passport-required>false</pilgrimage-passport-required>
+    </pilgrimage-voucher>
+
+    <pilgrimage-voucher id="id16">
+        <country>Turkey</country>
+        <departure-date-time>2010-11-18T06:20:00</departure-date-time>
+        <arrival-date-time>2010-12-18T06:20:00</arrival-date-time>
+        <transport-type>Auto</transport-type>
+        <hotel>
+            <stars>6</stars>
+            <food>AL</food>
+            <place-count>2</place-count>
+            <air-conditioning>true</air-conditioning>
+            <tv>true</tv>
+        </hotel>
+        <cost>1800</cost>
+        <pilgrimage-passport-required>true</pilgrimage-passport-required>
+    </pilgrimage-voucher>
+
+
+</tourist-vouchers>

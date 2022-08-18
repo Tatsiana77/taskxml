@@ -1,0 +1,5 @@
+2021-11-02 05:10:21 [main] ERROR edu.epam.taskxml.main.VoucherMain - File does not exist
+2021-11-02 05:10:21 [main] FATAL edu.epam.taskxml.main.VoucherMain - File does not exist
+2021-11-02 05:10:47 [main] ERROR edu.epam.taskxml.main.VoucherMain - File does not exist
+2021-11-02 05:10:47 [main] FATAL edu.epam.taskxml.main.VoucherMain - File does not exist
+2021-11-02 05:12:08 [main] INFO  edu.epam.taskxml.validator.VoucherValidator - File: C:\Users\Work\IdeaProjects\taskxml\target\classes\files\voucher.xml is valid
